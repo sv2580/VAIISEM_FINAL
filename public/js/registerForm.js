@@ -69,24 +69,3 @@
 
 }
 
-    function fileValidation(){
-        var filesInput = document.getElementById('image');
-        var files = filesInput.files;
-        var allowedExtensions = /(\.jpeg|\.png)$/i;
-        var pom = 0;
-
-        for(var i=0;i<files.length;i++){
-            var filename = files[i].name;
-            var extension = filename.substr(filename.lastIndexOf("."));
-            var isAllowed = allowedExtensions.test(extension);
-            if(isAllowed){
-                pom++;
-            }
-        }
-
-        if(pom != files.length){
-            alert('Zvolte si subor tychto typov: .jpeg/.png');
-            filesInput.value = '';
-            return false;
-        }
-    }
