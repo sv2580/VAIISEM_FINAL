@@ -42,7 +42,7 @@
 
                     <div class="mb-3">
                         <label for="formFile" class="form-label">Profilová fotka:</label>
-                        <input name="file"  accept="image/*" class="form-control" id="formFile" onchange="fileValidation()" type="file">
+                        <input name="file"  accept="image/*" class="form-control" id="formFile"  type="file">
                     </div>
                     <small class="text-muted">Profilová fotka nie je povinná, ale zvyšuje Vaše šance na reakcie.</small>
 
